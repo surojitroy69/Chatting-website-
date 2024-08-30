@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Chat</title>
+    <title>Enhanced Chat</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="chat-container">
+        <div class="header">
+            <input type="text" id="user-name" placeholder="Enter your name" />
+            <div class="avatar-container">
+                <img src="avatar1.png" alt="Avatar 1" class="avatar" data-avatar="avatar1.png">
+                <img src="avatar2.png" alt="Avatar 2" class="avatar" data-avatar="avatar2.png">
+                <img src="avatar3.png" alt="Avatar 3" class="avatar" data-avatar="avatar3.png">
+                <!-- Add more avatars as needed -->
+            </div>
+        </div>
         <div class="chat-box" id="chat-box">
             <!-- Messages will appear here -->
         </div>
+        <div class="typing-indicator" id="typing-indicator"></div>
         <div class="input-container">
             <input type="text" id="message-input" placeholder="Type a message...">
             <button id="send-button">Send</button>
+            <button id="clear-button">Clear</button>
+        </div>
+        <div class="emoji-container" id="emoji-container">
+            <span class="emoji" data-emoji="😊">😊</span>
+            <span class="emoji" data-emoji="😂">😂</span>
+            <span class="emoji" data-emoji="❤️">❤️</span>
+            <!-- Add more emojis as needed -->
         </div>
     </div>
     <script src="script.js"></script>
